@@ -25,7 +25,7 @@ public class CSet {
     public void colleccionHashSet() {
         // 1_000_000 >java 7 undescores o low dash agrupa numéricamente
         // se va a iterar un millo de veces es mas legible, 1000000 = 1_000_000
-        final Set hasSet = new HashSet(1_000_000);
+        final Set hasSet = new HashSet(1_000_000);// --> final Set hasSet = new HashSet(1000000);
         final Long startHastSetTime = System.currentTimeMillis();
         for (int i = 0; i < 1_000_000; i++) {
             hasSet.add(i);

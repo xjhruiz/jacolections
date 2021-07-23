@@ -14,6 +14,7 @@ public class CStream {
     static List<Persona> personas = new ArrayList<Persona>();
 
     public void agregarPersonas() {
+        var mensaje = "HOLA";
         System.out.println("Creando Personas");
         for (int i = 0; i < 10; i++) {
             personas.add(new Persona("Nombre : " + i, "Apellido: " + i, (int) (Math.random() * (30 - i))));
