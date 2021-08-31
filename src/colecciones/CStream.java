@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
-// >java 8 los streams permiten hacer operaciones funcionales sobre elementos de la colecciones
+// >java 8 los streams permiten hacer operaciones funcionales sobre elementos de colecciones
 public class CStream {
 
     // ejemplo de streams
@@ -32,8 +32,8 @@ public class CStream {
         CStream cStream = new CStream();
         cStream.agregarPersonas();
         cStream.imprimir(personas);
-        // de esta forma obtenemos todos los nombre de las personas y lo mostramos,
-        // tambine se pueden operar con ciertos metodos.
+        // de esta forma obtenemos todos los nombres de las personas y los mostramos,
+        // tambien se puede operar con ciertos metodos.
         personas.stream().map(Persona::getNombre).collect(Collectors.toList()).forEach(System.out::println);
         // ordenando las edades de forma desc
         personas.stream().map(Persona::getEdad).sorted((a, b) -> b.compareTo(a)).forEach(System.out::print);
